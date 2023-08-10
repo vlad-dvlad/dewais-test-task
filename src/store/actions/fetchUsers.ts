@@ -6,9 +6,10 @@ export const fetchUsers = createAsyncThunk(
   "user/fetchAll",
   async (query: string, { rejectWithValue }) => {
     try {
-      const { data } = await API.get(`users?q${query}`);
+      const { data } = await API.get(`search/users?q=${query}`);
       let users = [] as IUser[];
-      users = data.map(
+      console.log(data);
+      users = data.items.map(
         (item: {
           id: number;
           login: string;
