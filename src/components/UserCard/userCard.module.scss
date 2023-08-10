@@ -1,4 +1,29 @@
 .userCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+  background-color: rgb(226, 240, 212);
+  border-radius: 10px;
+  min-height: 300px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  row-gap: 15px;
   &__container {
+    padding: 10px 20px;
+  }
+
+  &__image {
+    height: 270px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 700;
+    span {
+      font-weight: 400;
+    }
   }
 }

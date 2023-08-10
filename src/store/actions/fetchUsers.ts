@@ -14,13 +14,13 @@ export const fetchUsers = createAsyncThunk(
           id: number;
           login: string;
           avatar_url: string;
-          url: string;
+          html_url: string;
           type: string;
         }) => ({
           userId: item.id,
           login: item.login,
           avatarUrl: item.avatar_url,
-          url: item.url,
+          url: item.html_url,
           type: item.type,
         })
       );
