@@ -1,4 +1,10 @@
 .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   &__container {
     padding: 20px 40px;
   }
